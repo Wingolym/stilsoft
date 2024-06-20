@@ -1,9 +1,12 @@
-﻿
-#include <iostream>
+﻿#include <iostream>
+#include "io.h"
+
+using namespace std;
 
 int main()
 {
-    std::cout << ":3\n";
-    std::cout << ":3\n";
-    std::cout << ":3\n";
+	int a(readNumber());
+	int b(readNumber());
+	int num = {a+b};
+	print(num,a,b);
 }
